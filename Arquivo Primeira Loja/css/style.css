@@ -1,0 +1,139 @@
+*{
+    margin: 0%;
+}
+@media only screen and (max-width:0px){
+}
+@font-face {
+    font-family: Dimis;
+    src: url(DIMIS.TTF);
+}
+
+body {
+    background-image: url(fundo.gif);
+    background-attachment: fixed;
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "aside main main"
+    "footer footer footer"
+}
+header {
+    background-image: linear-gradient(white,transparent 50%);
+    text-align: center;
+    color: black;
+    font-family: Dimis;
+    grid-area: header;
+    padding-left: 20px;
+}
+main {
+    display: flex;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    grid-area: main;
+}
+aside {
+    background-image: url(fundoaside.gif);
+    position: relative;
+    font-family: Dimis;
+    width: 270px;
+    grid-area: aside;
+    padding-left: 20px;
+}
+footer {
+    background-image: linear-gradient(transparent 50%,white );
+    text-align: center;
+    color: yellow;
+    font-family: Dimis;
+    grid-area: footer;
+    padding-left: 20px;
+}
+
+.humanbay {
+    width: 500px;
+}
+.atencao {
+    width: 300px;
+}
+.homem {
+    width: 200px;
+}
+.mulher {
+    width: 200px;
+}
+.aviso {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: yellow;
+}
+
+.card {
+    margin: 10px;
+    width: 300px;
+    height: 540px;
+    border-radius: 15px;
+    background-color: rgb(30, 30, 30);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, limegreen 0px 0px 0px 3px;
+}
+.imagem {
+    display: flex;
+    justify-content: center;
+}
+.img-card {
+    width: 150px;
+    height: 180px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: 500px;
+    border-radius: 10px;
+    border: none;
+    background-color: limegreen;
+    color: white;
+}
+.btn:hover {
+    transition: 0.5s;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+div.footer a {
+    color: crimson;
+}
+div.footer a:hover {
+    color: white;
+    transition: 0.5s;
+}
+div.aside h2{
+    color: limegreen;
+}
+div.aside h2:hover{
+    color: black;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.txt-footer {
+    font-size: 50px;
+}
+.txt-header {
+    font-size: 50px;
+}
+.txt-name {
+    text-align: center;
+    font-weight: 600px;
+    font-size: 25px;
+}
+.txt-info {
+    text-align: center;
+    font-weight: 300px;
+    font-size: 15px;
+    margin-top: 20px;
+}
