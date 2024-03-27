@@ -27,6 +27,7 @@ header {
 }
 main {
     display: flex;
+    position: relative;
     color: white;
     font-family: 'Poppins',sans-serif;
     grid-area: main;
@@ -35,7 +36,7 @@ aside {
     background-image: url(fundoaside.gif);
     position: relative;
     font-family: Dimis;
-    width: 270px;
+    width: 280px;
     grid-area: aside;
     padding-left: 20px;
 }
@@ -54,21 +55,25 @@ footer {
 .atencao {
     width: 300px;
 }
-.homem {
-    width: 200px;
-}
-.mulher {
-    width: 200px;
-}
 .aviso {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: yellow;
 }
+.Mario {
+    width: 200px;
+}
 
+.box_mae{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-right: 400px;
+}
 .card {
     margin: 10px;
     width: 300px;
-    height: 540px;
+    height: 550px;
     border-radius: 15px;
     background-color: rgb(30, 30, 30);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, limegreen 0px 0px 0px 3px;
@@ -86,7 +91,7 @@ footer {
 .button {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .btn {
@@ -119,6 +124,17 @@ div.aside h2:hover{
     transition: 0.5s;
     cursor: pointer;
 }
+div.aside h3{
+    font-size: 22.5px;
+    color: red;
+}
+div.aside h3:hover{
+    font-size: 22.5px;
+    color: black;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
 
 .txt-footer {
     font-size: 50px;
