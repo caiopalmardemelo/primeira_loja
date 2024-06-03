@@ -69,6 +69,20 @@ footer {
     top: 40px;
     left: 460px;
 }
+.card h2 {
+    color: deepskyblue;
+    font-size: 40px;
+    position: absolute;
+    bottom: 200px;
+    left: 460px;
+}
+.card h3 {
+    color: deeppink;
+    font-size: 40px;
+    position: absolute;
+    bottom: 150px;
+    left: 460px;
+}
 
 /* IMAGENS */
 .avaliado {
@@ -86,7 +100,7 @@ footer {
 /* BOTAO */
 button {
     position: absolute;
-    top: 380px;
+    bottom: 20px;
     left: 460px;
     background-color: orange;
     border: none;
