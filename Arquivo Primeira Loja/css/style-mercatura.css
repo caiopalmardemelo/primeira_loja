@@ -1,0 +1,201 @@
+/* GERAL */
+*{
+    margin: 0;
+    list-style: none;
+}
+@font-face {
+    font-family: TiltNeon;
+    src: url(TILTNEON.ttf);
+}
+
+/* ELEMENTOS SEMANTICOS */
+body {
+    background-image: url(fundo.gif);
+    background-attachment: fixed;
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "aside main main"
+    "footer footer footer"
+}
+header {
+    background-image: linear-gradient(white,transparent 50%);
+    text-align: center;
+    color: yellow;
+    font-family: TiltNeon;
+    grid-area: header;
+}
+main {
+    color: white;
+    font-family: TiltNeon;
+    grid-area: main;
+}
+aside {
+    width: 250px;
+    color: white;
+    font-family: TiltNeon;
+    grid-area: aside;
+    box-shadow: lightslategray 2px 0px 0px 0px;
+}
+footer {
+    background-image: linear-gradient(transparent 50%,white);
+    text-align: center;
+    color: yellow;
+    font-family: TiltNeon;
+    grid-area: footer;
+}
+
+/* DETALHES DO CARD */
+.card {
+    position: relative;
+    margin: 20px;
+    width: 1200px;
+    height: 600px;
+    border-radius: 15px;
+    background-color: #1b1b1b;
+    box-shadow: limegreen 0px 0px 0px 4px;
+}
+.img-card {
+    width: 450px;
+}
+.card h1 {
+    color: deepskyblue;
+    position: absolute;
+    top: 0;
+    left: 460px;
+}
+.card p {
+    position: absolute;
+    top: 40px;
+    left: 460px;
+}
+
+/* IMAGENS */
+.avaliado {
+    position: absolute;
+    width: 450px;
+    top: 200px;
+    left: 460px;
+}
+.leprechaun {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* BOTAO */
+button {
+    position: absolute;
+    top: 380px;
+    left: 460px;
+    background-color: orange;
+    border: none;
+    padding: 15px;
+    width: 225px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+button:hover {
+    cursor: pointer;
+    background-color: orangered;
+    transition: 0.25s;
+}
+.button2 {
+    left: 720px;
+    height: 90px;
+}
+
+/* CORES ASIDE */
+aside h2{
+    
+    color: limegreen;
+}
+aside h2:hover{
+    color: white;
+    transition: 0.2s;
+    cursor: pointer;
+}
+aside h3{
+    font-size: 24px;
+    color: crimson;
+}
+aside h3:hover{
+    font-size: 24px;
+    color: white;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+/* CORES FOOTER */
+div.footer a {
+    color: crimson;
+}
+div.footer a:hover {
+    color: white;
+    transition: 0.2s;
+}
+
+/* CLICÁVEIS ABSOLUTOS */
+.lupa {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.carrinho {
+    position: absolute;
+    left: 90px;
+    top: 0px;
+}
+.user {
+    position: absolute;
+    left: 200px;
+    top: 20px;
+}
+
+/* MENU RETRÁTIL */
+.config {
+    position: absolute;
+    z-index: 999;
+    width: 65px;
+    right: 20px;
+    top: 20px;
+}
+.menuhb {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 1000;
+    width: 65px;
+    height: 65px;
+    opacity: 0;
+    cursor: pointer;
+}
+.menuhb:checked~.config {
+    transform: rotate(180deg);
+    transition: 0.25s;
+}
+
+.menu ul {
+    position: fixed;
+    z-index: 998;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    padding-top: 100px;
+    background-color: #ededed;
+    margin-right: -350px;
+    transition: 0.25s;
+}
+.menuhb:checked~ul {
+    margin-right: 0;
+}
+.menu a {
+    color: black;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

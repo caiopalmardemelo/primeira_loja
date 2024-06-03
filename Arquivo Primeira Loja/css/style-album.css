@@ -1,0 +1,104 @@
+/* ELEMENTOS SEMANTICOS */
+body {
+    margin: 0;
+    background-image: linear-gradient(darkgreen,lime);
+    background-attachment: fixed;
+    font-family: "Roboto", sans-serif;
+}
+
+/* FUNDO */
+div {
+    background-image: url(fundo.gif);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 300px;
+    width: 600px;
+    border-radius: 15px;
+}
+
+/* EDICAO DE TEXTO */
+h1 {
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 120px;
+}
+h2 {
+    position: absolute;
+    color: yellow;
+    top: 50px;
+    left: 50px;
+}
+
+/* TINKY WINKY */
+.tinky {
+    position: absolute;
+    top: 200px;
+    left: 80px;
+}
+.tinky-txt {
+    color: orange;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+.tinky-box {
+    position: absolute;
+    top: 260px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+}
+.tinky-quant {
+    color: crimson;
+    position: absolute;
+    top: 200px;
+    left: 500px;
+}
+.tinky-valor {
+    color: dodgerblue;
+    position: absolute;
+    top: 200px;
+    left: 700px;
+}
+
+/* DIPSY */
+.dipsy {
+    position: absolute;
+    top: 400px;
+    left: 80px;
+}
+.dipsy-txt {
+    color: orange;
+    position: absolute;
+    top: 400px;
+    left: 200px;
+}
+.dipsy-box {
+    position: absolute;
+    top: 480px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+}
+.dipsy-quant {
+    color: crimson;
+    position: absolute;
+    top: 400px;
+    left: 500px;
+}
+.dipsy-valor {
+    color: dodgerblue;
+    position: absolute;
+    top: 400px;
+    left: 700px;
+}
+
+/* PO */
+.demonio {
+    position: absolute;
+    top: 180px;
+    left: 880px;
+}
