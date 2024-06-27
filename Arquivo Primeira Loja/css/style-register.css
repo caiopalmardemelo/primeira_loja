@@ -7,22 +7,31 @@ body {
 }
 
 /* FUNDO */
-div {
+.box_mae {
     background-image: url(fundo.gif);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     padding: 80px;
-    border-radius: 15px;
+    height: 400px;
+    width: 200px;
+    border-radius: 5px;
 }
 
 /* LOGO */
+
 img {
+    width: 250px;
     position: absolute;
-    width: 200px;
-    right: 100px;
-    top: 25px;
+    top: 40px;
+    left: 55px;
+}
+
+.info {
+    position: absolute;
+    bottom: 40px;
+    left: 70px;
 }
 
 /* INPUT */

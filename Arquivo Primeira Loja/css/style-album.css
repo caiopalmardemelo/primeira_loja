@@ -1,104 +1,125 @@
-/* ELEMENTOS SEMANTICOS */
+@font-face {
+    font-family: TiltNeon;
+    src: url(TILTNEON.ttf);
+}
 body {
     margin: 0;
     background-image: linear-gradient(darkgreen,lime);
     background-attachment: fixed;
-    font-family: "Roboto", sans-serif;
+    font-family: TiltNeon;
+    color: white;
 }
 
-/* FUNDO */
-div {
+.main1 {
     background-image: url(fundo.gif);
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    padding: 300px;
-    width: 600px;
+    left: 0;
+    margin: 40px;
+    width: 820px;
+    height: 600px;
     border-radius: 15px;
 }
 
-/* EDICAO DE TEXTO */
-h1 {
+.main2 {
+    background-image: url(fundo.gif);
     position: absolute;
-    color: white;
-    top: 0;
-    left: 120px;
+    right: 0;
+    margin: 40px;
+    width: 420px;
+    height: 600px;
+    border-radius: 15px;
 }
+.maintxt {
+    text-align: center;
+}
+
+.card {
+    margin: 40px;
+    width: 740px;
+    height: 200px;
+    background-color: #1b1b1b;
+    box-shadow: darkviolet 0px 0px 0px 2.5px;
+    border-radius: 5px;
+
+}
+.card-img {
+    width: 120px;
+    height: 160px;
+    margin: 20px;
+    border-radius: 5px;
+}
+p {
+    position: absolute;
+    top: 150px;
+    left: 190px;
+    font-size: 20px;
+}
+.p2 {
+    left: 450px;
+}
+.p25 {
+    left: 450px;
+    top: 190px;
+    color: crimson;
+}
+.p3 {
+    left: 650px;
+}
+.p35 {
+    left: 650px;
+    top: 190px;
+    color: crimson;
+}
+.avaliado {
+    position: absolute;
+    top: 200px;
+    left: 190px;
+    width: 200px;
+}
+
+.preco {
+    position: absolute;
+    right: 20px;
+    top: 300px;
+}
+.preco2 {
+    position: absolute;
+    right: 20px;
+    top: 330px;
+}
+
 h2 {
-    position: absolute;
-    color: yellow;
-    top: 50px;
-    left: 50px;
+    margin-left: 20px;
 }
-
-/* TINKY WINKY */
-.tinky {
-    position: absolute;
-    top: 200px;
-    left: 80px;
+.input {
+    margin-left: 20px;
 }
-.tinky-txt {
-    color: orange;
-    position: absolute;
-    top: 200px;
-    left: 200px;
+input {
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 15px;
 }
-.tinky-box {
+.botao {
     position: absolute;
-    top: 260px;
-    left: 20px;
-    width: 40px;
-    height: 40px;
+    left: 70px;
+    bottom: 100px;
 }
-.tinky-quant {
+button {
+    background-color: #1b1b1b;
     color: crimson;
-    position: absolute;
-    top: 200px;
-    left: 500px;
+    box-shadow: crimson 0px 0px 0px 2.5px;
+    font-family: TiltNeon;
+    border: none;
+    height: 50px;
+    width: 280px;
+    border-radius: 25px;
+    font-size: 20px;
 }
-.tinky-valor {
-    color: dodgerblue;
-    position: absolute;
-    top: 200px;
-    left: 700px;
-}
-
-/* DIPSY */
-.dipsy {
-    position: absolute;
-    top: 400px;
-    left: 80px;
-}
-.dipsy-txt {
-    color: orange;
-    position: absolute;
-    top: 400px;
-    left: 200px;
-}
-.dipsy-box {
-    position: absolute;
-    top: 480px;
-    left: 20px;
-    width: 40px;
-    height: 40px;
-}
-.dipsy-quant {
-    color: crimson;
-    position: absolute;
-    top: 400px;
-    left: 500px;
-}
-.dipsy-valor {
-    color: dodgerblue;
-    position: absolute;
-    top: 400px;
-    left: 700px;
-}
-
-/* PO */
-.demonio {
-    position: absolute;
-    top: 180px;
-    left: 880px;
+button:hover {
+    cursor: pointer;
+    color: green;
+    box-shadow: green 0px 0px 0px 2.5px;
+    transition: 0.25s;
 }
